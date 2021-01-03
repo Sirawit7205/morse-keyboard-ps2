@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 74HC11
+D Triple 3-input AND
+K TTL And3
+F http://www.ti.com/lit/gpn/sn74LS11
+$ENDCMP
+#
 $CMP 74HC151
 D 8-to-1 Multiplexer
 K 8-to-1 Multiplexer
@@ -16,6 +22,12 @@ $CMP 74HC161
 D Synchronous 4-bit Counter with Async Reset
 K Synchronous 4-bit Counter with Async Reset
 F http://www.ti.com/lit/ds/symlink/sn74ls161a.pdf
+$ENDCMP
+#
+$CMP 74HC280
+D Parity Generator/Checker
+K TTL ALU Arith
+F http://www.ti.com/lit/gpn/sn74LS280
 $ENDCMP
 #
 $CMP 74HC32
