@@ -1,0 +1,39 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74HC151
+D 8-to-1 Multiplexer
+K 8-to-1 Multiplexer
+F https://assets.nexperia.com/documents/data-sheet/74HC_HCT151_Q100.pdf
+$ENDCMP
+#
+$CMP 74HC154
+D 4-to-16 Line Decoder
+K 4-to-16 Line Decoder
+F https://assets.nexperia.com/documents/data-sheet/74HC_HCT154.pdf
+$ENDCMP
+#
+$CMP 74HC161
+D Synchronous 4-bit Counter with Async Reset
+K Synchronous 4-bit Counter with Async Reset
+F http://www.ti.com/lit/ds/symlink/sn74ls161a.pdf
+$ENDCMP
+#
+$CMP 74HC32
+D Quad 2-input OR
+K Quad 2-input OR
+F https://assets.nexperia.com/documents/data-sheet/74HC_HCT32.pdf
+$ENDCMP
+#
+$CMP 74HC688
+D 8-bit Magnitude Comparator
+K 8-bit Magnitude Comparator
+F https://assets.nexperia.com/documents/data-sheet/74HC688.pdf
+$ENDCMP
+#
+$CMP NCE30P12S
+D -12A Id, -30V Vds, P-Channel MOSFET, SOIC-8
+K -12A Id, -30V Vds, P-Channel MOSFET, SOIC-8
+F https://datasheet.lcsc.com/szlcsc/1810251712_Wuxi-NCE-Power-Semiconductor-NCE30P12S_C167515.pdf
+$ENDCMP
+#
+#End Doc Library

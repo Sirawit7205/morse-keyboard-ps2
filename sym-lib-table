@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name morse_ic)(type Legacy)(uri ${KIPRJMOD}/libs/morse_ic.lib)(options "")(descr ""))
+  (lib (name IDT7201)(type Legacy)(uri ${KIPRJMOD}/libs/IDT7201.lib)(options "")(descr ""))
+)
