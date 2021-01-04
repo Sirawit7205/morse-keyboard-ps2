@@ -2892,38 +2892,6 @@ Wire Wire Line
 	14400 8150 14900 8150
 Wire Wire Line
 	12500 6850 12600 6850
-$Comp
-L Connector:Mini-DIN-6 J1
-U 1 1 60956FF7
-P 1400 1800
-F 0 "J1" H 1400 2167 50  0000 C CNN
-F 1 "Keyboard" H 1400 2076 50  0000 C CNN
-F 2 "GiraffeTech-Connector:Connector_Mini-DIN_Female_6Pin_2rows" H 1400 1800 50  0001 C CNN
-F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 1400 1800 50  0001 C CNN
-	1    1400 1800
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1100 1900
-NoConn ~ 1100 1700
-Text GLabel 2250 1900 2    50   Input ~ 0
-KBDAT
-Text GLabel 2250 1700 2    50   Input ~ 0
-KBCLK
-$Comp
-L power:+5V #PWR08
-U 1 1 60A01269
-P 900 1750
-F 0 "#PWR08" H 900 1600 50  0001 C CNN
-F 1 "+5V" H 915 1923 50  0000 C CNN
-F 2 "" H 900 1750 50  0001 C CNN
-F 3 "" H 900 1750 50  0001 C CNN
-	1    900  1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1100 1800 900  1800
-Wire Wire Line
-	900  1800 900  1750
 Text GLabel 8250 5050 2    50   Input ~ 0
 KEYBOARD_PRESS
 Text GLabel 2850 6750 0    50   Input ~ 0
@@ -3118,70 +3086,6 @@ Wire Wire Line
 NoConn ~ 8350 1500
 Text GLabel 8500 1700 2    50   Input ~ 0
 KBD_VALID
-Wire Wire Line
-	1800 1100 1800 1200
-$Comp
-L power:+5V #PWR01
-U 1 1 6288A24C
-P 1800 1100
-F 0 "#PWR01" H 1800 950 50  0001 C CNN
-F 1 "+5V" H 1815 1273 50  0000 C CNN
-F 2 "" H 1800 1100 50  0001 C CNN
-F 3 "" H 1800 1100 50  0001 C CNN
-	1    1800 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 6288A256
-P 1800 1350
-F 0 "R1" H 1870 1396 50  0000 L CNN
-F 1 "4K7" H 1870 1305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1730 1350 50  0001 C CNN
-F 3 "~" H 1800 1350 50  0001 C CNN
-	1    1800 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2150 1100 2150 1200
-$Comp
-L power:+5V #PWR02
-U 1 1 629099CE
-P 2150 1100
-F 0 "#PWR02" H 2150 950 50  0001 C CNN
-F 1 "+5V" H 2165 1273 50  0000 C CNN
-F 2 "" H 2150 1100 50  0001 C CNN
-F 3 "" H 2150 1100 50  0001 C CNN
-	1    2150 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1700 1700 1800 1700
-Wire Wire Line
-	1700 1900 2150 1900
-Wire Wire Line
-	1800 1500 1800 1700
-Connection ~ 1800 1700
-Wire Wire Line
-	2150 1500 2150 1900
-Connection ~ 2150 1900
-Wire Wire Line
-	2150 1900 2250 1900
-$Comp
-L power:GNDREF #PWR010
-U 1 1 62C33E06
-P 1800 2000
-F 0 "#PWR010" H 1800 1750 50  0001 C CNN
-F 1 "GNDREF" H 1805 1827 50  0001 C CNN
-F 2 "" H 1800 2000 50  0001 C CNN
-F 3 "" H 1800 2000 50  0001 C CNN
-	1    1800 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1700 1800 1800 1800
-Wire Wire Line
-	1800 1800 1800 2000
 Text GLabel 5300 9150 0    50   Input ~ 0
 KBD1
 Text GLabel 5300 9250 0    50   Input ~ 0
@@ -3304,8 +3208,6 @@ Wire Wire Line
 	5700 5500 5850 5500
 Wire Wire Line
 	8100 5050 8250 5050
-Text GLabel 1100 2550 0    50   Input ~ 0
-~FULL
 Connection ~ 3750 6400
 $Comp
 L 74xx:74HC74 U1
@@ -3473,48 +3375,11 @@ Text Notes 7450 4300 0    50   ~ 0
 Break Code Detection
 Text Notes 7500 5450 0    50   ~ 0
 FIFO Write Trigger
-Wire Wire Line
-	1550 3150 1700 3150
-$Comp
-L power:GNDREF #PWR014
-U 1 1 6833BB4C
-P 2000 3450
-F 0 "#PWR014" H 2000 3200 50  0001 C CNN
-F 1 "GNDREF" H 2005 3277 50  0001 C CNN
-F 2 "" H 2000 3450 50  0001 C CNN
-F 3 "" H 2000 3450 50  0001 C CNN
-	1    2000 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NPN_BEC Q2
-U 1 1 6833BB57
-P 1900 3150
-F 0 "Q2" H 2090 3196 50  0000 L CNN
-F 1 "MMBT2222A" H 2090 3105 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2100 3250 50  0001 C CNN
-F 3 "~" H 1900 3150 50  0001 C CNN
-	1    1900 3150
-	1    0    0    -1  
-$EndComp
-Text Notes 1250 3450 0    50   ~ 0
-Comm Inhibit\non buffer full
 Text Notes 4100 4600 0    50   ~ 0
 Data Input Buffer
 Wire Wire Line
 	13150 3950 13550 3950
 Connection ~ 13550 3950
-$Comp
-L 74xx:74HC14 U3
-U 2 1 68FFE70B
-P 1700 4250
-F 0 "U3" H 1700 4567 50  0000 C CNN
-F 1 "74HC14" H 1700 4476 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1700 4250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 1700 4250 50  0001 C CNN
-	2    1700 4250
-	1    0    0    -1  
-$EndComp
 $Comp
 L 74xx:74HC14 U3
 U 3 1 68FFFA84
@@ -3526,52 +3391,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 19400 1400 50  0001 C CNN
 	3    19400 1400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1100 2550 1250 2550
-$Comp
-L 74xx:74HC14 U3
-U 4 1 69000C7C
-P 1550 2550
-F 0 "U3" H 1550 2867 50  0000 C CNN
-F 1 "74HC14" H 1550 2776 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1550 2550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 1550 2550 50  0001 C CNN
-	4    1550 2550
-	1    0    0    -1  
-$EndComp
-Text Notes 1150 5350 0    100  ~ 0
-PS/2 Keyboard
-Text Notes 1300 4750 0    50   ~ 0
-Invert clock signal\nfrom falling to rising
-Wire Wire Line
-	2000 4250 2150 4250
-Text GLabel 2150 4250 2    50   Input ~ 0
-~KBCLK
-Wire Wire Line
-	1300 4250 1400 4250
-Text GLabel 1300 4250 0    50   Input ~ 0
-KBCLK
-Text Notes 1150 6050 0    50   ~ 0
-Device-To-Host data sequence:\n1 start bit (low)\n8 data bits (LSB first)\n1 parity bit (odd)\n1 stop bit (high)
-Wire Wire Line
-	1800 1700 2000 1700
-Wire Wire Line
-	2000 2950 2000 1700
-Connection ~ 2000 1700
-Wire Wire Line
-	2000 1700 2250 1700
-Wire Wire Line
-	1850 2550 1900 2550
-Wire Wire Line
-	1900 2550 1900 2850
-Wire Wire Line
-	1900 2850 1200 2850
-Wire Wire Line
-	1200 2850 1200 3150
-Wire Wire Line
-	1200 3150 1250 3150
-Wire Wire Line
-	2000 3350 2000 3450
 Wire Wire Line
 	3450 11550 3450 11900
 Wire Wire Line
@@ -3786,28 +3605,6 @@ F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7850 1900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS280" H 7850 1900 50  0001 C CNN
 	1    7850 1900
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 629099D8
-P 2150 1350
-F 0 "R2" H 2220 1396 50  0000 L CNN
-F 1 "4K7" H 2220 1305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2080 1350 50  0001 C CNN
-F 3 "~" H 2150 1350 50  0001 C CNN
-	1    2150 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 6833BB41
-P 1400 3150
-F 0 "R3" V 1193 3150 50  0000 C CNN
-F 1 "1K" V 1284 3150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1330 3150 50  0001 C CNN
-F 3 "~" H 1400 3150 50  0001 C CNN
-	1    1400 3150
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R4
@@ -4048,6 +3845,222 @@ Text GLabel 7000 3800 0    50   Input ~ 0
 KBD6
 Text GLabel 7000 3700 0    50   Input ~ 0
 KBD5
+Wire Wire Line
+	1150 1800 1300 1800
+Wire Wire Line
+	800  1800 950  1800
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 5FFB89B9
+P 1050 1800
+F 0 "F1" V 845 1800 50  0000 C CNN
+F 1 "150mA" V 936 1800 50  0000 C CNN
+F 2 "Fuse:Fuse_1210_3225Metric" H 1100 1600 50  0001 L CNN
+F 3 "~" H 1050 1800 50  0001 C CNN
+	1    1050 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 6833BB41
+P 1600 3150
+F 0 "R3" V 1393 3150 50  0000 C CNN
+F 1 "1K" V 1484 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1530 3150 50  0001 C CNN
+F 3 "~" H 1600 3150 50  0001 C CNN
+	1    1600 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 629099D8
+P 2350 1350
+F 0 "R2" H 2420 1396 50  0000 L CNN
+F 1 "4K7" H 2420 1305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2280 1350 50  0001 C CNN
+F 3 "~" H 2350 1350 50  0001 C CNN
+	1    2350 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3350 2200 3450
+Wire Wire Line
+	1400 3150 1450 3150
+Wire Wire Line
+	1400 2850 1400 3150
+Wire Wire Line
+	2100 2850 1400 2850
+Wire Wire Line
+	2100 2550 2100 2850
+Wire Wire Line
+	2050 2550 2100 2550
+Wire Wire Line
+	2200 1700 2450 1700
+Connection ~ 2200 1700
+Wire Wire Line
+	2200 2950 2200 1700
+Wire Wire Line
+	2000 1700 2200 1700
+Text Notes 1350 6050 0    50   ~ 0
+Device-To-Host data sequence:\n1 start bit (low)\n8 data bits (LSB first)\n1 parity bit (odd)\n1 stop bit (high)
+Text GLabel 1500 4250 0    50   Input ~ 0
+KBCLK
+Wire Wire Line
+	1500 4250 1600 4250
+Text GLabel 2350 4250 2    50   Input ~ 0
+~KBCLK
+Wire Wire Line
+	2200 4250 2350 4250
+Text Notes 1500 4750 0    50   ~ 0
+Invert clock signal\nfrom falling to rising
+Text Notes 1350 5350 0    100  ~ 0
+PS/2 Keyboard
+$Comp
+L 74xx:74HC14 U3
+U 4 1 69000C7C
+P 1750 2550
+F 0 "U3" H 1750 2867 50  0000 C CNN
+F 1 "74HC14" H 1750 2776 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1750 2550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 1750 2550 50  0001 C CNN
+	4    1750 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 2550 1450 2550
+$Comp
+L 74xx:74HC14 U3
+U 2 1 68FFE70B
+P 1900 4250
+F 0 "U3" H 1900 4567 50  0000 C CNN
+F 1 "74HC14" H 1900 4476 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1900 4250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 1900 4250 50  0001 C CNN
+	2    1900 4250
+	1    0    0    -1  
+$EndComp
+Text Notes 1450 3450 0    50   ~ 0
+Comm Inhibit\non buffer full
+$Comp
+L Device:Q_NPN_BEC Q2
+U 1 1 6833BB57
+P 2100 3150
+F 0 "Q2" H 2290 3196 50  0000 L CNN
+F 1 "MMBT2222A" H 2290 3105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2300 3250 50  0001 C CNN
+F 3 "~" H 2100 3150 50  0001 C CNN
+	1    2100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR014
+U 1 1 6833BB4C
+P 2200 3450
+F 0 "#PWR014" H 2200 3200 50  0001 C CNN
+F 1 "GNDREF" H 2205 3277 50  0001 C CNN
+F 2 "" H 2200 3450 50  0001 C CNN
+F 3 "" H 2200 3450 50  0001 C CNN
+	1    2200 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3150 1900 3150
+Text GLabel 1300 2550 0    50   Input ~ 0
+~FULL
+Wire Wire Line
+	2000 1800 2000 2000
+Wire Wire Line
+	1900 1800 2000 1800
+$Comp
+L power:GNDREF #PWR010
+U 1 1 62C33E06
+P 2000 2000
+F 0 "#PWR010" H 2000 1750 50  0001 C CNN
+F 1 "GNDREF" H 2005 1827 50  0001 C CNN
+F 2 "" H 2000 2000 50  0001 C CNN
+F 3 "" H 2000 2000 50  0001 C CNN
+	1    2000 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1900 2450 1900
+Connection ~ 2350 1900
+Wire Wire Line
+	2350 1500 2350 1900
+Connection ~ 2000 1700
+Wire Wire Line
+	2000 1500 2000 1700
+Wire Wire Line
+	1900 1900 2350 1900
+Wire Wire Line
+	1900 1700 2000 1700
+$Comp
+L power:+5V #PWR02
+U 1 1 629099CE
+P 2350 1100
+F 0 "#PWR02" H 2350 950 50  0001 C CNN
+F 1 "+5V" H 2365 1273 50  0000 C CNN
+F 2 "" H 2350 1100 50  0001 C CNN
+F 3 "" H 2350 1100 50  0001 C CNN
+	1    2350 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1100 2350 1200
+$Comp
+L Device:R R1
+U 1 1 6288A256
+P 2000 1350
+F 0 "R1" H 2070 1396 50  0000 L CNN
+F 1 "4K7" H 2070 1305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1930 1350 50  0001 C CNN
+F 3 "~" H 2000 1350 50  0001 C CNN
+	1    2000 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 6288A24C
+P 2000 1100
+F 0 "#PWR01" H 2000 950 50  0001 C CNN
+F 1 "+5V" H 2015 1273 50  0000 C CNN
+F 2 "" H 2000 1100 50  0001 C CNN
+F 3 "" H 2000 1100 50  0001 C CNN
+	1    2000 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1100 2000 1200
+Wire Wire Line
+	800  1800 800  1750
+$Comp
+L power:+5V #PWR08
+U 1 1 60A01269
+P 800 1750
+F 0 "#PWR08" H 800 1600 50  0001 C CNN
+F 1 "+5V" H 815 1923 50  0000 C CNN
+F 2 "" H 800 1750 50  0001 C CNN
+F 3 "" H 800 1750 50  0001 C CNN
+	1    800  1750
+	1    0    0    -1  
+$EndComp
+Text GLabel 2450 1700 2    50   Input ~ 0
+KBCLK
+Text GLabel 2450 1900 2    50   Input ~ 0
+KBDAT
+NoConn ~ 1300 1700
+NoConn ~ 1300 1900
+$Comp
+L Connector:Mini-DIN-6 J1
+U 1 1 60956FF7
+P 1600 1800
+F 0 "J1" H 1600 2167 50  0000 C CNN
+F 1 "Keyboard" H 1600 2076 50  0000 C CNN
+F 2 "GiraffeTech-Connector:Connector_Mini-DIN_Female_6Pin_2rows" H 1600 1800 50  0001 C CNN
+F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 1600 1800 50  0001 C CNN
+	1    1600 1800
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	8700 9700 8700 11550
 Wire Bus Line
